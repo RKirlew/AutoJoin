@@ -46,7 +46,7 @@ def draft():
         if b:
             try:
                 print(ban)
-                test=pyautogui.locateOnScreen(ban,grayscale=False,confidence=0.5)
+                test=pyautogui.locateCenterOnScreen(ban,grayscale=False,confidence=0.5)
                 pyautogui.moveTo(test[0],test[1])
                 pyautogui.click()
                 sleep(2)
